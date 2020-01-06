@@ -2,7 +2,7 @@
 
 namespace Exolnet\Skeleton\Tests\Integration;
 
-use Exolnet\Skeleton\SkeletonServiceProvider;
+use Exolnet\Skeleton\LaravelStaticModelServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
@@ -15,7 +15,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            LaravelStaticModelServiceProvider::class,
         ];
     }
 }

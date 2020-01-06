@@ -1,42 +1,44 @@
 {
-    "name": "exolnet/:package_name",
-    "description": ":package_description",
+    "name": "exolnet/laravel-static-model",
+    "description": "Define a laravel model using a static definition",
     "keywords": [
         "exolnet",
         "laravel",
-        ":package_name"
+        "laravel-static-model"
     ],
-    "homepage": "https://github.com/eXolnet/:package_name",
+    "homepage": "https://github.com/eXolnet/laravel-static-model",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
+            "name": "Simon Gaudreau",
             "homepage": "https://www.exolnet.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.3",
+        "illuminate/support": "^6.8"
     },
     "require-dev": {
+        "exolnet/phpcs-config": "^1.0",
         "mockery/mockery": "^1.0",
-        "phpunit/phpunit": "^6.0",
-        "orchestra/testbench" : "^3.5",
-        "squizlabs/php_codesniffer": "^3.3.2"
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
         "psr-4": {
-            "Exolnet\\Skeleton\\": "src/"
+            "Exolnet\\StaticModel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Exolnet\\Skeleton\\Tests\\": "tests"
+            "Exolnet\\StaticModel\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "lint": "vendor/bin/phpcs -p --standard=PSR2 config src tests",
-        "lint-fix": "vendor/bin/phpcbf -p --standard=PSR2 config src tests",
+        "lint": "vendor/bin/phpcs -p --standard=ruleset.xml",
+        "lint-fix": "vendor/bin/phpcbf -p --standard=ruleset.xml",
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
@@ -46,11 +48,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Exolnet\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "Exolnet\\Skeleton\\SkeletonFacade"
-            }
+                "Exolnet\\StaticModel\\StaticModelServiceProvider"
+            ]
         }
     }
 }

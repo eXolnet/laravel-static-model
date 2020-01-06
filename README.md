@@ -1,20 +1,18 @@
-# :package_name
+# laravel-static-model
 
-[![Latest Stable Version](https://poser.pugx.org/eXolnet/:package_name/v/stable?format=flat-square)](https://packagist.org/packages/eXolnet/:package_name)
+[![Latest Stable Version](https://poser.pugx.org/eXolnet/laravel-static-model/v/stable?format=flat-square)](https://packagist.org/packages/eXolnet/laravel-static-model)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/eXolnet/:package_name/master.svg?style=flat-square)](https://travis-ci.org/eXolnet/:package_name)
-[![Total Downloads](https://img.shields.io/packagist/dt/eXolnet/:package_name.svg?style=flat-square)](https://packagist.org/packages/eXolnet/:package_name)
+[![Build Status](https://img.shields.io/travis/eXolnet/laravel-static-model/master.svg?style=flat-square)](https://travis-ci.org/eXolnet/laravel-static-model)
+[![Total Downloads](https://img.shields.io/packagist/dt/eXolnet/laravel-static-model.svg?style=flat-square)](https://packagist.org/packages/eXolnet/laravel-static-model)
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` with their correct values, then delete this line.
-
-:package_description
+Define a laravel model using a static definition
 
 ## Installation
 
 Require this package with composer:
 
 ```
-composer require exolnet/:package_name
+composer require exolnet/laravel-static-model
 ```
 
 If you don't use package auto-discovery, add the service provider to the ``providers`` array in `config/app.php`:
@@ -51,7 +49,7 @@ If you discover any security related issues, please email security@exolnet.com i
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Simon Gaudreau](https://github.com/Gandhi11)
 - [All Contributors](../../contributors)
 
 ## License
