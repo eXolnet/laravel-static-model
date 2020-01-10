@@ -2,6 +2,7 @@
 
 namespace Exolnet\StaticModel;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 
 class StaticModelServiceProvider extends ServiceProvider
@@ -18,5 +19,6 @@ class StaticModelServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        Model::macro('')
     }
 }
