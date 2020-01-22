@@ -1,13 +1,16 @@
 <?php
 
-namespace Exolnet\Skeleton\Tests\Unit;
+namespace Exolnet\StaticModel\Tests\Unit;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
 abstract class UnitTest extends TestCase
 {
-    public function tearDown()
+    /**
+     * @return void
+     */
+    public function tearDown(): void
     {
         Mockery::close();
     }
