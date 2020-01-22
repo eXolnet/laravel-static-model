@@ -37,6 +37,7 @@ If you discover any security related issues, please email security@exolnet.com i
 
 ## Credits
 
+- [Alexandre D'Eschambeault](https://github.com/xel1045)
 - [Simon Gaudreau](https://github.com/Gandhi11)
 - [All Contributors](../../contributors)
 

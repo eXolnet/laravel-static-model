@@ -10,6 +10,11 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Alexandre D'Eschambeault",
+            "homepage": "https://www.exolnet.com",
+            "role": "Developer"
+        },
+        {
             "name": "Simon Gaudreau",
             "homepage": "https://www.exolnet.com",
             "role": "Developer"
