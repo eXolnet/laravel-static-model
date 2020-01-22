@@ -23,6 +23,7 @@
     "require": {
         "php": "^7.3",
         "ext-json": "*",
+        "illuminate/contracts": "^6.0",
         "illuminate/database": "^6.0",
         "illuminate/support": "^6.0"
     },
